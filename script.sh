@@ -9,5 +9,3 @@ done >> $dirFile
 echo -n "]" >> $dirFile
 
 pug index.pug
-
-(cd "Processing Experiments" ; ./script.sh)
