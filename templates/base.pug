@@ -6,18 +6,34 @@ mixin link(name)
 
 mixin base(directories, titlePage, rootPath)
   doctype
-  html
+  html(lang="en")
     head
       meta(charset="utf-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1")
       title= titlePage
+      link(rel="stylesheet", href="http://www.w3schools.com/lib/w3.css")
       link(rel="stylesheet", href= rootPath + "ressources/stylesheets/feuille.css")
-      script(src= rootPath + "ressources/scripts/jquery-2.1.3.min.js")
-    body(onload="init();")
-      .body_wrap
-        .header_cont
-          header
-            h1= "Welcome to my website"
-        .body_cont
-          ul
-            for dir in directories
-              +link(dir)
+      script(type='text/javascript', src= rootPath + "ressources/scripts/jquery-2.1.3.min.js")
+    body(class="w3-content", style="max-width:1300px")
+      // First Grid: Logo & About
+      .w3-row
+        .w3-half.w3-black.w3-container.w3-center(style="height:700px")
+          .w3-padding-64
+            h1 Jonathan Bonnaud
+          .w3-padding-64
+            a(href="#", class="w3-btn w3-btn-block w3-hover-blue-grey w3-padding-16")="Home"
+            a(href="#work", class="w3-btn w3-btn-block w3-hover-teal w3-padding-16")="My Work"
+            a(href="#work", class="w3-btn w3-btn-block w3-hover-dark-grey w3-padding-16")="Resume"
+            a(href="#contact", class="w3-btn w3-btn-block w3-hover-brown w3-padding-16")="Contact"
+
+        .w3-half.w3-black.w3-container.w3-center(style="height:700px")
+          .w3-padding-64.w3-center
+            h1 About Me
+            img(src="", class="w3-margin w3-circle", alt="Person", style="width:50%")
+            .w3-left-align.w3-padding-xxlarge
+              p
+                Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+              p
+                Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+
+      // Second Grid: Work & Resume
