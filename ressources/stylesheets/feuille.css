@@ -1,0 +1,74 @@
+@media only screen and (max-device-width: 640px) {
+    body {
+        font-size: 7vw;
+    }
+}
+@font-face {
+    font-family: "Atelas";
+    src: url('../fonts/Atelas.ttf');
+}
+@font-face {
+	font-family: "SanFrancisco";
+	src: url('../fonts/San_Francisco_Display_Thin.ttf');
+}
+li {
+    list-style-type: none;
+    text-align: center;
+}
+.header_cont {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px #CCC solid;
+    top: 0px;
+    left: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+header {
+    height: auto;
+    margin: 0px auto;
+    text-align: center;
+}
+h1 {
+    display: inline;
+    font-size: 3em;
+    font-family: "Atelas";
+}
+.body_cont {
+    margin-top: 8em;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.actions {
+    text-align: center;
+}
+
+/* TEXT */
+a {
+	text-decoration: none;
+}
+li {
+  margin-top: 0.5em;
+}
+body {
+    font-size: 2em;
+    color: #000;
+    background-color: #fff;
+	font-family: "SanFrancisco";
+    text-rendering: optimizeLegibility;
+}
+dt {
+    font-size: 0.75em;
+    /* 9px/12px */
+    color: #ac7c00;
+    margin-top: 0.33333333333333em;
+    /* 3px/9px */
+}
+dd {
+    line-height: 1.5em;
+    /* 18px */
+    white-space: nowrap;
+}

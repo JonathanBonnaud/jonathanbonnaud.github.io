@@ -1,0 +1,28 @@
+- directories = directories.sort(function(a, b){return a.length-b.length})
+
+mixin link(name)
+  li
+    a(href=name + "/index.html") #{name}
+
+mixin base(directories, titlePage, rootPath)
+  doctype
+  html
+    head
+      meta(charset="utf-8")
+      title= titlePage
+      link(rel="stylesheet", href= rootPath + "ressources/stylesheets/feuille.css")
+      script(src= rootPath + "ressources/scripts/jquery-2.1.3.min.js")
+      script(src= rootPath + "ressources/scripts/bouncy.js")
+    body(onload="init();")
+      .body_wrap
+        .header_cont
+          header
+            h1= titlePage
+        .body_cont
+          ul
+            for dir in directories
+              +link(dir)
+      script.
+          function init() {
+              makeItBouncy('a');
+          }
