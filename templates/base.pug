@@ -28,19 +28,19 @@ mixin base(directories, titlePage, rootPath)
         .w3-half.w3-blue-grey.w3-container(style="height:700px")
           .w3-padding-64.w3-center
             h1 About Me
-            img.w3-margin.w3-circle(src= rootPath + "ressources/images/ico.png", alt="Person", style="width:50%")
+            img.w3-margin.w3-circle(src= rootPath + "ressources/images/profilepic.jpg", alt="Person", style="width:50%")
             .w3-left-align.w3-padding-xxlarge
               p.
-                Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla
+                Python developer. Cook and baker in my spared time, I also love playing board games and video games.
               p.
-                Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                Graduated with a Master's degree in Computer Science specialized in Natural Language Processing and Machine Learning.
 
       // Second Grid: Work & Resume
       .w3-row
         .w3-half.w3-light-grey.w3-center#work(style="min-height:800px")
           .w3-padding-64
             h2 My Work
-            p Some of my latest projects.
+            p Some of my projects.
           .w3-padding-64
                 for dir in directories
                   +link(dir)
@@ -61,7 +61,7 @@ mixin base(directories, titlePage, rootPath)
                   td Université de Nantes, France
                 tr
                   td 2015
-                  td L3 Computer Science
+                  td Bachelor Computer Science
                   td Aix-Marseille University, France
                 tr.w3-white
                   td 2013
@@ -73,10 +73,10 @@ mixin base(directories, titlePage, rootPath)
           .w3-padding-64
             h1 To contact me
           .w3-padding-64
-            p ...for a cup of coffee, or whatever.
+            p ...for a cup of tea (I do not like coffee :p), or whatever.
             p Nantes, FRANCE
             p +37 7 70 37 22 64
-            p bonnjona@hotmail.fr
+            p jonathan.bonnaud.pro@gmail.com
 
         .w3-half.w3-teal.w3-container(style="height:700px")
           .w3-padding-64.w3-padding-xxlarge
